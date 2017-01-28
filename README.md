@@ -1,8 +1,7 @@
 # <a name="top"></a>AlarmAll
 An alternate alarm system for people with hearing loss that integrates with existing alarms. Created at McHacks 2017.
-
 ## <a name="toc"></a>Table of Contents
-
+* [Inside this Repository](#inside)
 * [Existing Alarm Systems](#existing)
 * [How it Works](#works)
 * [Engineering Process/Specs](#process)
@@ -16,6 +15,23 @@ An alternate alarm system for people with hearing loss that integrates with exis
     * [Full Schematic](#schematic)
     * [Bode Plot](#bode3)
   * [Circuit Construction](#circuit)
+
+## <a name="inside"></a> Inside this Repository
+
+This repository structure is as follows:
+
+* `schematic` - All schematic files for this project.
+* `code` - All Arduino/Raspberry Pi code for this project.
+* `pictures` - Contains the following subfolders:
+   * `analysis` - All pencil-and-paper circuit analysis calculations and sketches.
+   * `pspice` - Contains the following subfolders:
+     * `schematic-photos` - All schematic screenshots.
+     * `bode` - All PSpice Bode plot screenshots.
+   * `circuit` - All photos of the actual circuit.
+   * `results` - All Discovery Board screenshots.
+ 
+[Back to Top] (#top)
+
 
 ## <a name="existing"></a> Existing Alarm Systems
 
