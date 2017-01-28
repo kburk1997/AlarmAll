@@ -36,4 +36,10 @@ Below is the Bode plot with the op-amp:
 
 #### Gain Corrections
 
-Using the Bode plot, we determined that the gain was too high. We then changed the gain to 3 instead of 5 and got the following Bode plot:
+Using the Bode plot, we determined that the gain was too high. We then experimented with different resistor values and determined that the following setup was ideal:
+
+![Full Schematic](http://i.imgur.com/mw1xjTD.png)
+
+With this setup, we get a near ideal Bode plot:
+
+![Ideal Op Amp Bode Plot](http://i.imgur.com/VnWHBVS.png)
