@@ -26,3 +26,14 @@ However, we quickly realized that as the frequencies get higher, we will have a 
 Below are our calculations with a schematic:
 
 ![Op Amp Schematic](http://i.imgur.com/prgfTyo.jpg)
+
+EDIT: The schematic is incorrect, here is the correct schematic:
+![Corrected Schematic](http://i.imgur.com/xCA3YSW.jpg)
+
+Below is the Bode plot with the op-amp:
+
+![Op Amp Bode Plot](http://i.imgur.com/qU692iu.png)
+
+#### Gain Corrections
+
+Using the Bode plot, we determined that the gain was too high. We then changed the gain to 3 instead of 5 and got the following Bode plot:
