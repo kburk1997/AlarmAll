@@ -12,3 +12,7 @@ The audio from the alarm goes through a high-pass filter. If audio over 3 kHz is
 Below are our initial calculations and schematics for the high-pass filter:
 
 ![Schematic](http://i.imgur.com/NpJeELF.jpg)
+
+After running PSpice on the circuit, we get the following Bode plot:
+
+![Bode Plot](http://i.imgur.com/pRQAaEb.png)
