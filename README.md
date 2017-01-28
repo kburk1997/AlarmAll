@@ -9,6 +9,8 @@ Most alarm systems operate at high frequencies. For people with hearing loss, th
 
 The audio from the alarm goes through a high-pass filter. If audio over 3 kHz is detected, it will pass through this filter and a bright, non-flashing light will output.
 
+### Initial Circuit Analysis/Simulation
+
 Below are our initial calculations and schematics for the high-pass filter:
 
 ![Schematic](http://i.imgur.com/NpJeELF.jpg)
@@ -16,3 +18,11 @@ Below are our initial calculations and schematics for the high-pass filter:
 After running PSpice on the circuit, we get the following Bode plot:
 
 ![Bode Plot](http://i.imgur.com/pRQAaEb.png)
+
+### Addition of Op-Amp
+
+However, we quickly realized that as the frequencies get higher, we will have a 0 volt output. In order to correct this, we added an opamp with a gain of 5.
+
+Below are our calculations with a schematic:
+
+![Op Amp Schematic](http://i.imgur.com/prgfTyo.jpg)
