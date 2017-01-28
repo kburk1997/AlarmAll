@@ -28,7 +28,7 @@ This repository structure is as follows:
      * `schematic-photos` - All schematic screenshots.
      * `bode` - All PSpice Bode plot screenshots.
    * `circuit` - All photos of the actual circuit.
-   * `results` - All Discovery Board screenshots.
+   * `results` - All Discovery Board screenshots, including voltage measurements and Bode plots.
  
 [Back to Top] (#top)
 
