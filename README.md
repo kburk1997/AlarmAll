@@ -24,15 +24,12 @@ An alternate alarm system for people with hearing loss that integrates with exis
 This repository structure is as follows:
 
 * `schematic` - All schematic files for this project.
-* `code` - All Arduino/Raspberry Pi code for this project.
 * `pictures` - Contains the following subfolders:
    * `analysis` - All pencil-and-paper circuit analysis calculations and sketches.
    * `pspice` - Contains the following subfolders:
      * `schematic-photos` - All schematic screenshots.
      * `bode` - All PSpice Bode plot screenshots.
-   * `circuit` - All photos of the actual circuit.
-   * `results` - All Discovery Board screenshots, including voltage measurements and Bode plots.
- 
+   * `circuit` - All photos of the actual circuit. 
 [Back to Top] (#top)
 
 
