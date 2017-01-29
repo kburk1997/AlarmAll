@@ -1,0 +1,88 @@
+
+**** 01/28/17 18:38:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-alarmall"  [ C:\Users\burkhk\circuits\alarmall_schematic-PSpiceFiles\SCHEMATIC1\alarmall.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "alarmall.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\burkhk\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 5 10 100000
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ALARMALL_SCHEMATIC
+C_C1         N14290 N14393  .1u  TC=0,0 
+R_R1         0 N14393  538 TC=0,0 
+V_V1         N14290 0 DC 0Vdc AC 1Vac 
+E_U1         N14664 0 VALUE {LIMIT(V(N14393,N14657)*1E6,-15V,+15V)}
+R_R2         0 N14657  6.8k TC=0,0 
+R_R3         N14657 N14664  4.7k TC=0,0 
+
+**** RESUMING alarmall.cir ****
+.END
+
+**** 01/28/17 18:38:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-alarmall"  [ C:\Users\burkhk\circuits\alarmall_schematic-PSpiceFiles\SCHEMATIC1\alarmall.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N14290)    0.0000 (N14393)    0.0000 (N14657)    0.0000 (N14664)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/28/17 18:38:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-alarmall"  [ C:\Users\burkhk\circuits\alarmall_schematic-PSpiceFiles\SCHEMATIC1\alarmall.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

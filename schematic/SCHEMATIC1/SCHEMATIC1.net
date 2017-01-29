@@ -1,0 +1,7 @@
+* source ALARMALL_SCHEMATIC
+C_C1         N14290 N14393  .1u  TC=0,0 
+R_R1         0 N14393  538 TC=0,0 
+V_V1         N14290 0 DC 0Vdc AC 1Vac 
+E_U1         N14664 0 VALUE {LIMIT(V(N14393,N14657)*1E6,-15V,+15V)}
+R_R2         0 N14657  6.8k TC=0,0 
+R_R3         N14657 N14664  4.7k TC=0,0 
