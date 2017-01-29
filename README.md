@@ -15,6 +15,9 @@ An alternate alarm system for people with hearing loss that integrates with exis
     * [Full Schematic](#schematic)
     * [Bode Plot](#bode3)
   * [Circuit Construction](#circuit)
+  * [Debugging Fun Facts](#debugging)
+    * [All Attempted Bug Fixes](#fixes)
+    * [% Error Table](error)
 
 ## <a name="inside"></a> Inside this Repository
 
@@ -114,6 +117,50 @@ With this setup, we get a near ideal Bode plot:
 
 ### <a name="circuit"></a> Circuit Construction
 
-Since all Bode plots and Pspice results were correct, we began to build the circuit.
+Since all Bode plots and Pspice results were correct, we began to build the circuit. However, the circuit ended up not working. Through hours of tedious debugging, we determined our Discovery Board was failing and we had no other alternative (since Arduino, Pi, etc. cannot produce the analog sine wave we need).
+
+Here is our actual circuit:
+
+![Circuit](http://i.imgur.com/dLGPXNU.jpg)
+
+[Back to Top] (#top)
+
+### <a name="debugging"></a> Debugging Fun Facts
+
+####  <a name="fixes"></a> All Attempted Bug Fixes
+
+Here is a list of actual attempted bug fixes:
+* First we removed the opamp and tested the circuit with a unity gain. It still wasn't working according to the unity gain Bode plot.
+* We tried recalculating resistor and capacitor values. Those were correct.
+* If we held the wire, the circuit would magically work. That doesn't happen anymore.
+* We tried taping everything down with masking tape to no avail.
+* We tried turning the Discovery Board on and off. Several times.
+* We stripped wires with our teeth because we suspected the provided wires were incompatible.
+* We changed breadboards. Twice.
+* We inserted the wires through a juice box straw to attempt to get voltage across a wire. It didn't work.
+
+[Back to Top] (#top)
+
+#### <a name="error"></a> % error
+
+Here was our % error table for the unity gain:
+
+|Frequency (Hz) | PSpice Output (dB) | Measured Output (dB) | % Error |
+|---|---|---|---|
+|10|-49.21|-50.46|2.54%|
+|100|-29.426|-4.61245|84.33%|
+|1000|-5.3652|-0.819|84.73%|
+|3000|1.58|0|100%|
+|10000|4.1649|n/a|n/a|
+
+Here was our % error table for the circuit with the opamp:
+
+|Frequency (Hz) | PSpice Output (dB) | Measured Output (dB) | % Error |
+|---|---|---|---|
+|10|-44.757|-17.2024|62%|
+|100|-24.862|-4.61245|81%|
+|1000|-5.3269|11.607|318%|
+|3000|1.4862|n/a|n/a|
+|10000|4.1994|n/a|n/a|
 
 [Back to Top] (#top)
